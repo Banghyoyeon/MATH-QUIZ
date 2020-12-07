@@ -1,0 +1,136 @@
+/* 글씨체 설정 */
+@font-face {
+    font-family: "DungGeunMo";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 전체 */
+*,*::before {
+    box-sizing: border-box; /* 박스 사이즈 맞추기 */
+    -webkit-tap-highlight-color: transparent; /* 크롬 적용, 하이라이트 제거용 */
+}
+
+/* html, body  */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "DungGeunMo";
+    display:flex;
+    /* 내용물의 가로축만큼만 차지하게 되며 가로 방향으로 배치됨 */
+    justify-content: center;
+    align-items: center;
+    /* 아이템을 상하좌우 한 가운데에 놓음 */
+    background: black;
+}
+
+div{
+    margin:auto;
+}
+
+
+
+
+
+/* calculator */
+#calculator {
+    width: 90%;
+    max-width: 430px;
+    padding: 25px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom right, #e5e7eb, #9da9c2);
+}
+
+/* input */
+#input-wrap {
+    position: relative;
+    width: calc(100% - 4px);
+    margin-bottom: 5px;
+    padding: 0 5px;
+    background: #4ca7e7;
+    text-align: right;
+    box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+/* 현재 입력한 숫자 */
+#input {
+    height: 5rem;
+    line-height: 6rem;
+    font-size: 2rem;
+}
+
+/* 전체 식 */
+#tmp {
+    position: absolute;
+    right: 5px;
+    top: 0.25rem;
+    color: rgb(83, 85, 102);
+}
+
+
+
+
+
+
+/* button 전체 정렬 */
+#button-wrap {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; /* 줄바꿈 */
+    justify-content: space-around; /* 아이템들의 둘레에 균일한 간격을 만들어 줌 */
+
+}
+
+/* 버튼 */
+#button-wrap > button {
+    width: calc(25% - 4px);
+    text-align: center;
+    line-height: 5rem;
+    margin: 2px 0;
+    background: #9baec8;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    outline: 0;
+    transition: 0.3s;
+    font-size:20px;
+    border:none;
+    transition: all .5s ease;
+}
+
+/* 숫자 버튼 배경색 지정 */
+#button-wrap > button.silver, button.gray {
+    background: #d9e1e8;
+    font-weight:600;
+}
+
+/* 커서가 요소 위에 올라가 있을 때 나타나는 이벤트 */
+#button-wrap > button.silver:hover, button.gray:hover {
+    box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+#button-wrap > button.orange:hover {
+    box-shadow: inset 0px 0px 15px 0px rgba(197, 194, 194, 0.3);
+}
+
+/* = 버튼 배경색 지정 */
+#button-wrap > button.orange {
+    background: #282c37;
+    font-size:30px;
+    color:white;
+}
+
+
+
+.pressed{
+    box-shadow: inset 0px 0px 15px 0px rgba(141, 137, 137, 0.3);
+    transform: scale(1.2);
+    background:tomato;
+}

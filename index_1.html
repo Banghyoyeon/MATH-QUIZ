@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MATH QUIZ</title>
+    <link rel="icon" href="./img/favicon.png"/>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./css/index_1_style.css"/>
+</head>
+<body>
+    <table style="text-align:center;">
+        <tr>
+            <td><embed id="logo" src="./img/logo_gif.gif"></embed></td>
+        </tr>
+        <tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr>
+        <tr>
+            <td><img id="start" src="./img/start.png" alt="start.png" onclick="location.href='./index_2.html'"/></td>
+        </tr>
+    </table>
+    <script>
+        $("#start").hover(function(){
+            $(this).css({"height":"180px", "width":"300px"});
+        }, function(){
+            $(this).css({"height":"160px", "width":"280px"});
+        });
+    </script>
+</body>
+</html>

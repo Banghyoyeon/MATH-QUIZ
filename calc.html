@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HYONI.calc</title>
+    <link rel="stylesheet" href="./css/calc_deco.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+        <div id="calculator">
+            <div id="input-wrap">
+                <div id="tmp"></div>
+                <div id="input"></div>
+            </div>
+    
+            <div id="button-wrap">
+                <button class="silver" onclick="all_del()">AC</button>
+                <button class="silver" onclick="del()">C</button>
+                <button class="silver" onclick="back()">←</button>
+                <button class="orange" onclick="add('/')">÷</button> 
+    
+                <button class="gray" onclick="add(7)">7</button>
+                <button class="gray" onclick="add(8)">8</button>
+                <button class="gray" onclick="add(9)">9</button>
+                <button class="orange" onclick="add('*')">×</button>
+    
+                <button class="gray" onclick="add(4)">4</button>
+                <button class="gray" onclick="add(5)">5</button>
+                <button class="gray" onclick="add(6)">6</button>
+                <button class="orange" onclick="add('-')">－</button>
+    
+                <button class="gray" onclick="add(1)">1</button>
+                <button class="gray" onclick="add(2)">2</button>
+                <button class="gray" onclick="add(3)">3</button>
+                <button class="orange" onclick="add('+')">＋</button>
+    
+                <button class="gray" onclick="plusminus()"><sup>+</sup>/<sub>-</sub></button>
+                <button class="gray" onclick="add(0)">0</button>
+                <button class="gray" onclick="dot()">.</button>
+                <button class="orange" onclick="calculate()">＝</button>
+            </div>    
+        </div>
+        <script src="./js/calc_f.js"></script>
+</body>
+</html>

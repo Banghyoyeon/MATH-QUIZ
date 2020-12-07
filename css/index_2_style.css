@@ -1,0 +1,137 @@
+/* 프린트 시 화면 */
+@media print{
+    .container{
+        page-break-after: always; 
+        margin-top: 4em;
+    }
+    .Cheader{
+        display:none;
+    }
+    @page { margin: 0; }
+}
+
+/* 나눔고딕 글씨체 설정 */
+@font-face{
+    font-family: 'NanumGothic';
+    src: url(./NanumGothic.ttf) format('truetype');
+}
+
+/* 나눔고딕 글씨체 */
+*{
+    font-family: NanumGothic;
+}
+
+/* 전체 화면 */
+body{
+    margin:0;
+    padding:0;
+}
+
+/* 위 메뉴 */
+.Cheader{
+    background-color:burlywood;
+    height: 50px;
+    padding:6px 1rem 0px 1rem;
+}
+
+/* radio font 설정 */
+#Ptn{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 피연산자, 연산자 */
+select{
+    height:30px; 
+    width:90px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 메뉴 버튼 */
+button{
+    border-radius: 10px;
+    outline: none;
+    height:35px; 
+    width:80px;
+    margin:0;
+    padding:0;
+    font-size:20px;
+    font-weight: bold;
+}
+
+/* 버튼 위에 마우스 올렸을 때 버튼 어둡게 만들기 */
+button:hover{
+    box-shadow: inset 0px 0px 15px 0px rgba(37, 37, 37, 0.3);
+}
+
+/* 시작 버튼 */
+.btn_start{
+    background-color: #ff7473;
+    color:white;
+}
+
+/* 출력 버튼 */
+.btn_print{
+    background-color: #ffc952;
+    color:black;
+}
+
+/* 채점 버튼 */
+.btn_check{
+    background-color: #47b8e0;
+    color:balck;
+}
+
+/* 계산기 버튼 */
+.btn_calc{
+    background-color: #93bd92;
+    color:black;
+}
+
+/* 정답을~ , '점수: 점' 글씨 */
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* ques.js에서 테이블 */
+.list table {
+    width:600px;
+    font-size: 50px;
+    text-align: center;
+    border-color:palegoldenrod;
+}
+
+/* ques.js에서 input type=number class=answer */
+.answer{
+    font-size: 50px;
+    width:90px;
+    height:50px;
+}
+
+/* ques.js에서 input type=number class=verti */
+.verti{
+    font-size: 40px;
+    width:90px;
+    height:30px;
+}
+
+/* 만든이 */
+#footer {
+    display: inline-block;
+    display: none;
+    margin-top: 50px;
+    bottom:0;
+    width:100%;
+    text-align: center;
+}
+
+/* 정답쓰는 칸 */
+input[type="number"]{
+    text-align: right;
+    border-radius: 20px;
+    width:120px;
+    height:45px;
+}
